@@ -1,0 +1,21 @@
+{
+  "name": "canvassie-backend",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.0.5",
+    "uuid": "^8.3.2"
+  },
+  "scripts": {
+    "build": "npm run clean && tsc && npm run movedir",
+    "start": "node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "clean": "rimraf ./dist"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.9",
+    "@types/node": "^14.14.20",
+    "@types/socket.io": "^2.1.12",
+    "@types/uuid": "^8.3.0",
+    "rimraf": "^3.0.2"
+  }
+}
