@@ -57,3 +57,18 @@ declare module '*.png' {
 }
 
 /* CUSTOM: ADD YOUR OWN HERE */
+type Cursor = {
+  x: number;
+  y: number;
+};
+
+type State = {
+  cursors: Cursor[];
+  x: number;
+  y: number;
+};
+
+type Action = {
+  type: 'ADD_CURSOR' | 'UPDATE_POS';
+  payload: any;
+};
